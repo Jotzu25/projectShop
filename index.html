@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina di form</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<style>
+.highlight img {
+	width: 80px;
+}
+</style>
+<body>
+
+
+	<div th:include="layout/navbar :: navbar"></div>
+
+	<div class="container"
+		style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;"
+		id="homeDiv">
+		<h1>Entery Dashboard</h1>
+
+
+		<div id="divEnteryButtons"
+			style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+			<form action="/listaPcStore" method="GET">
+				<input type="submit" class="btn" value="Entrata STORE">
+			</form>
+
+			<form action="/vaiMagazzino" method="GET">
+				<input type="submit" class="btn" value="Gestione Magazzino">
+			</form>
+		</div>
+
+	</div>
+
+	<div class="container" style="margin-bottom: 50px;">
+		<h5>Principali argomenti trattati per la creazione dell'esercizio</h5>
+		<table class="highlight">
+			<thead>
+				<tr>
+					<th>Tecnologia</th>
+					<th>Impiego</th>
+					<th>Descrizione</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>html+css</td>
+					<td>Per la creazione dei template</td>
+					<td><img alt=""
+						src="https://as1.ftcdn.net/v2/jpg/03/21/24/30/1000_F_321243084_GstfWflk1eTLlzUdRZ5mjoP5IG1iCc8J.jpg"></td>
+				</tr>
+				<tr>
+					<td>Materialize</td>
+					<td>Per la creazione di alcune componenti</td>
+					<td><img alt=""
+						src="https://iconape.com/wp-content/files/kq/352997/svg/materialize-seeklogo.com.svg"></td>
+				</tr>
+				<tr>
+					<td>Java</td>
+					<td>Abbiamo utilizzato java come linguaggio principale per la
+						scrittura dell' applicazione</td>
+					<td><img alt=""
+						src="https://sendapp.live/wp-content/uploads/2023/08/java.jpg"></td>
+				</tr>
+				<tr>
+					<td>Jdbc</td>
+					<td>Per la connessione a MySQL</td>
+					<td><img alt=""
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrrbic7HisXerxcgbX7tkGNtJPV9uW_jK8Gg&s"></td>
+				</tr>
+				<tr>
+					<td>MySQL</td>
+					<td>Per la memorizzazione dei dati riguardanti la gestione del
+						magazzino e la vendita Pc</td>
+					<td><img alt=""
+						src="https://kinsta.com/it/wp-content/uploads/sites/2/2020/01/mysql-logo-1.svg"></td>
+				</tr>
+				<tr>
+					<td>Spring Boot</td>
+					<td>Per la renderizzazione in tempo reale</td>
+					<td><img alt=""
+						src="https://cdn.azilen.com/wp-content/uploads/2023/07/spring.jpg"></td>
+				</tr>
+				<tr>
+					<td>Mailsender (Java)</td>
+					<td>Per l'invio delle mail attraverso SMTP</td>
+					<td><img alt=""
+						src="https://i0.wp.com/captaindroid.com/wp-content/uploads/2022/07/Frame-6.jpg?fit=800%2C600&ssl=1"></td>
+				</tr>
+				<tr>
+					<td>API</td>
+					<td>Un test di utilizzo API per la creazione random di
+						immagini</td>
+					<td><img alt=""
+						src="https://cdn.vectorstock.com/i/500p/22/36/api-line-icon-on-white-background-vector-43902236.jpg"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+
+</html>
